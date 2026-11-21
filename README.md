@@ -18,7 +18,7 @@ The full story is in `final-report.md`.
 | `portfolio.json` | Final portfolio: positions, cost basis, fills, final valuation |
 | `trades.log` | Every mock trade, timestamped, with fill price + source |
 | `final-report.md` | Final report: every trade, final positions, ROI, benchmark, narrative |
-| `design-spec/stock-challenge-design-spec.pdf` | 17-page design spec of how the challenge was run (see below) |
+| `design-spec/stock-challenge-design-spec.md` | Design spec of how the challenge was run, converted from the 17-page PDF (see below) |
 | `code/` | Runnable Python reimplementation (stdlib only, no pip) |
 | `HOW-I-RAN-IT.md` | How the game was actually operated, step by step |
 

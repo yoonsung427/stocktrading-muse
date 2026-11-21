@@ -2,7 +2,7 @@
 
 This is the operational record: what was set up, what ran on what
 schedule, where prices came from, and how decisions were made. The
-17-page design spec PDF (`design-spec/stock-challenge-design-spec.pdf`)
+design spec (`design-spec/stock-challenge-design-spec.md`, converted from the 17-page PDF)
 covers the same ground in full detail, including the week-1 construction
 story and the rebalance decision trace. This file is the short version.
 
