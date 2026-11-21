@@ -21,6 +21,7 @@ The full story is in `final-report.md`.
 | `design-spec/stock-challenge-design-spec.md` | Design spec of how the challenge was run, converted from the 17-page PDF (see below) |
 | `code/` | Runnable Python reimplementation (stdlib only, no pip) |
 | `HOW-I-RAN-IT.md` | How the game was actually operated, step by step |
+| `OPENCLAW-GUIDE.md` | How to run the same game in OpenClaw — setup, guards, and paste-ready automations |
 
 ## How to run the code
 
@@ -49,5 +50,5 @@ scheduled jobs: it pulled closing prices (Finnhub, cross-checked against
 published reports), computed the book, wrote the check-ins, and proposed
 trades that only executed after the user's explicit approval. The
 reasoning, news-gathering, and judgment calls lived in that loop, not in
-a script. `HOW-I-RAN-IT.md` and the design spec PDF document that loop
+a script. `HOW-I-RAN-IT.md` and the design spec document that loop
 in full — that, plus this code, is the complete game.
