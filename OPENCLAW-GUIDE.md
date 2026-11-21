@@ -107,6 +107,80 @@ any code:
 - **Mock only.** No brokerage is connected, no real order can be
   placed, no credentials for one are held. Every fill is a mock fill.
 
+## Judgment and approval instructions — give these to OpenClaw
+
+Yes, there are — these are the instructions the game actually ran on
+(design spec §§11–13). Paste the judgment block into the agent's
+instructions (workspace `AGENTS.md`) and the approval block wherever the
+agent is told how trades get authorized. They are written for the agent,
+in the second person.
+
+### Judgment instructions (how to think at each check-in)
+
+- There is no scoring model and no coded rule set. You read three
+  things together: (a) each holding's return since fill, (b) its
+  original stored thesis, (c) the week's news. No single input decides.
+  Write your reasoning down in the check-in file where it can be
+  audited — that written reasoning, not a hidden calculation, is the
+  decision record.
+- Hold is the default. Every check-in presents the hold alternative
+  alongside any trade idea, and a proposal must beat doing nothing.
+- Re-examine the thesis, not the price. A falling holding is a
+  candidate to add to if its thesis is intact, and a candidate to exit
+  if the news breaks the thesis. A rising holding is a candidate to
+  trim when the rise comes from a temporary premium rather than
+  improved prospects.
+- Trade strength into weakness, in pairs. Rebalances are framed as
+  source-and-use: one holding funds another, keeping the portfolio
+  fully invested and cash non-negative by construction.
+- Time remaining counts. With five weeks left there is room for a
+  trimmed position to recover and an added position to work; the same
+  move needs a stronger case in the final week.
+- Size moves in fractions of a position, not all-or-nothing. Partial
+  trims keep a working thesis in the portfolio while freeing
+  meaningful proceeds.
+- Save the evidence: every headline you rely on goes into the check-in
+  file with its source named, so the evidence behind a suggestion is
+  preserved, not summarized away.
+- A suggestion is written as a sized, reasoned proposal with the hold
+  alternative stated, and labeled: no trades made — needs the user's
+  explicit ok.
+
+Worked example — Week 1, the only trade of the game. NVDA had fallen
+6.6% on a sector-wide AI selloff while its own story was unchanged, so
+a thesis-intact leader below entry was an add candidate. XOM had risen
+4.7% to near an all-time high on a geopolitical oil premium, so a hedge
+at a temporary premium was a trim candidate. Sizing: sell exactly half
+the XOM (14.6190 shares) and put all the proceeds into NVDA. Half
+realizes a meaningful slice of the spike while the retained half keeps
+the hedge alive; a full exit would abandon a working hedge, and a
+$1,000 trim would barely move NVDA.
+
+### Approval instructions (how a trade gets authorized)
+
+- The only trigger for a trade is an explicit yes from the user in
+  plain words in the main chat. Nothing else counts — not a thumbs-up
+  reaction, not silence, not "looks good."
+- If a signal is ambiguous, clarify it before acting. Week 1: the user
+  reacted to the proposal with a thumbs-up; YSA asked whether that
+  meant yes rather than assuming it. The user replied "Yes, do the
+  rebalance." Only then was the trade authorized.
+- An approval authorizes exact trades: ticker, side, exact share count,
+  and session. Write the execution job after approval, naming the
+  approval date and the exact trades.
+- The execution job re-reads `portfolio.json` first: confirm status is
+  `"live"` and the position is still as stated. If trades for that
+  session already exist, stop — the trade already executed.
+- Price at the session's official open; timestamp fills at the open
+  (06:30 Pacific). If the opens cannot be established from a reliable
+  source, do nothing, report that the fills could not be priced, and
+  leave the portfolio unchanged.
+- Record both fills in `portfolio.json` and `trades.log` with fill
+  price, price source, and a note recording the approval date. Write a
+  run note and report the fills in chat.
+- An approval covers one execution only, for the named session. A new
+  idea needs a new approval.
+
 ## The schedule, as OpenClaw automations
 
 All times Pacific; adjust the dates for your own game. Create from the
