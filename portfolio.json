@@ -1,0 +1,279 @@
+{
+  "cash": 0.01,
+  "challenge": "6-week mock stock challenge",
+  "notes": "all 8 staged orders filled at mon oct 12 2026 official open prices; week-2 rebalance (approved sun oct 18 2026) filled at mon oct 19 2026 official open prices; challenge ended fri nov 20 2026 close at $42,457.13 (-15.09% vs $50,000 start); mock fills, no real money moved",
+  "positions": [
+    {
+      "ticker": "NVDA",
+      "shares": 55.5764,
+      "fill_price": 226.86,
+      "fill_time": "2026-10-19T06:30:00-07:00",
+      "cost_basis": 12608.76,
+      "lots": [
+        {
+          "shares": 43.6148,
+          "fill_price": 229.28,
+          "cost": 10000.0,
+          "fill_time": "2026-10-12T06:30:00-07:00"
+        },
+        {
+          "shares": 11.9616,
+          "fill_price": 218.095,
+          "cost": 2608.76,
+          "fill_time": "2026-10-19T06:30:00-07:00"
+        }
+      ],
+      "thesis": "ai infra leader",
+      "price_source": "blended: 43.6148 @ 229.28 (oct 12) + 11.9616 @ 218.095 (oct 19)"
+    },
+    {
+      "ticker": "MSFT",
+      "shares": 14.0169,
+      "fill_price": 535.07,
+      "fill_time": "2026-10-12T06:30:00-07:00",
+      "cost_basis": 7500.02,
+      "thesis": "ai + cloud, steady",
+      "price_source": "marketbeat.com instant alerts dated 2026-10-12 ('opened at $535.07 on Monday')"
+    },
+    {
+      "ticker": "AMZN",
+      "shares": 28.579,
+      "fill_price": 262.43,
+      "fill_time": "2026-10-12T06:30:00-07:00",
+      "cost_basis": 7499.99,
+      "thesis": "aws + consumer",
+      "price_source": "americanbankingnews.com dated 2026-10-12 ('opened at $262.43 on Monday')"
+    },
+    {
+      "ticker": "META",
+      "shares": 6.9573,
+      "fill_price": 718.67,
+      "fill_time": "2026-10-12T06:30:00-07:00",
+      "cost_basis": 5000.0,
+      "thesis": "ai capex, ads engine",
+      "price_source": "americanbankingnews.com dated 2026-10-12 ('opened at $718.67 on Monday')"
+    },
+    {
+      "ticker": "JPM",
+      "shares": 15.0146,
+      "fill_price": 333.01,
+      "fill_time": "2026-10-12T06:30:00-07:00",
+      "cost_basis": 5000.01,
+      "thesis": "bank earnings oct 13 catalyst",
+      "price_source": "zolmax.com dated 2026-10-12 ('opened at $333.01 on Monday')"
+    },
+    {
+      "ticker": "LLY",
+      "shares": 4.2328,
+      "fill_price": 1181.24,
+      "fill_time": "2026-10-12T06:30:00-07:00",
+      "cost_basis": 4999.95,
+      "thesis": "pharma growth",
+      "price_source": "finnhub.io live quote (Open Price 1181.24, Prev Close 1179.27)"
+    },
+    {
+      "ticker": "XOM",
+      "shares": 14.6191,
+      "fill_price": 171.01,
+      "fill_time": "2026-10-12T06:30:00-07:00",
+      "cost_basis": 2500.0,
+      "lots": [
+        {
+          "shares": 14.6191,
+          "fill_price": 171.01,
+          "cost": 2500.0,
+          "fill_time": "2026-10-12T06:30:00-07:00"
+        }
+      ],
+      "realized_on_trim": {
+        "shares_sold": 14.619,
+        "fill_price": 178.45,
+        "proceeds": 2608.76,
+        "realized_gain": 108.76
+      },
+      "thesis": "energy hedge",
+      "price_source": "finnhub.io live quote (Open Price 171.01, Prev Close 168.94)"
+    },
+    {
+      "ticker": "GE",
+      "shares": 16.2454,
+      "fill_price": 307.78,
+      "fill_time": "2026-10-12T06:30:00-07:00",
+      "cost_basis": 5000.01,
+      "thesis": "industrials, earnings oct 20",
+      "price_source": "finnhub.io live quote (Open Price 307.78, Prev Close 308.20)"
+    }
+  ],
+  "reference_prices_fri_oct_9_close": {
+    "AMZN": 262.43,
+    "GE": 308.2,
+    "JPM": 332.99,
+    "LLY": 1179.27,
+    "META": 718.67,
+    "MSFT": 535.07,
+    "NVDA": 229.28,
+    "SPX": 7811.54,
+    "XOM": 168.94
+  },
+  "staged_orders": [
+    {
+      "target_pct": 20,
+      "target_value": 10000,
+      "thesis": "ai infra leader",
+      "ticker": "NVDA"
+    },
+    {
+      "target_pct": 15,
+      "target_value": 7500,
+      "thesis": "ai + cloud, steady",
+      "ticker": "MSFT"
+    },
+    {
+      "target_pct": 15,
+      "target_value": 7500,
+      "thesis": "aws + consumer",
+      "ticker": "AMZN"
+    },
+    {
+      "target_pct": 10,
+      "target_value": 5000,
+      "thesis": "ai capex, ads engine",
+      "ticker": "META"
+    },
+    {
+      "target_pct": 10,
+      "target_value": 5000,
+      "thesis": "bank earnings oct 13 catalyst",
+      "ticker": "JPM"
+    },
+    {
+      "target_pct": 10,
+      "target_value": 5000,
+      "thesis": "pharma growth",
+      "ticker": "LLY"
+    },
+    {
+      "target_pct": 10,
+      "target_value": 5000,
+      "thesis": "energy hedge",
+      "ticker": "XOM"
+    },
+    {
+      "target_pct": 10,
+      "target_value": 5000,
+      "thesis": "industrials, earnings oct 20",
+      "ticker": "GE"
+    }
+  ],
+  "start_cash": 50000.0,
+  "status": "final",
+  "trades": [
+    {
+      "timestamp": "2026-10-12T06:30:00-07:00",
+      "ticker": "NVDA",
+      "action": "buy (mock fill at market open)",
+      "shares": 43.6148,
+      "fill_price": 229.28,
+      "cost_basis": 10000.0,
+      "price_source": "marketbeat.com instant alerts dated 2026-10-12 ('opened at $229.28 on Monday')",
+      "note": "mock fill \u2014 no real money moved"
+    },
+    {
+      "timestamp": "2026-10-12T06:30:00-07:00",
+      "ticker": "MSFT",
+      "action": "buy (mock fill at market open)",
+      "shares": 14.0169,
+      "fill_price": 535.07,
+      "cost_basis": 7500.02,
+      "price_source": "marketbeat.com instant alerts dated 2026-10-12 ('opened at $535.07 on Monday')",
+      "note": "mock fill \u2014 no real money moved"
+    },
+    {
+      "timestamp": "2026-10-12T06:30:00-07:00",
+      "ticker": "AMZN",
+      "action": "buy (mock fill at market open)",
+      "shares": 28.579,
+      "fill_price": 262.43,
+      "cost_basis": 7499.99,
+      "price_source": "americanbankingnews.com dated 2026-10-12 ('opened at $262.43 on Monday')",
+      "note": "mock fill \u2014 no real money moved"
+    },
+    {
+      "timestamp": "2026-10-12T06:30:00-07:00",
+      "ticker": "META",
+      "action": "buy (mock fill at market open)",
+      "shares": 6.9573,
+      "fill_price": 718.67,
+      "cost_basis": 5000.0,
+      "price_source": "americanbankingnews.com dated 2026-10-12 ('opened at $718.67 on Monday')",
+      "note": "mock fill \u2014 no real money moved"
+    },
+    {
+      "timestamp": "2026-10-12T06:30:00-07:00",
+      "ticker": "JPM",
+      "action": "buy (mock fill at market open)",
+      "shares": 15.0146,
+      "fill_price": 333.01,
+      "cost_basis": 5000.01,
+      "price_source": "zolmax.com dated 2026-10-12 ('opened at $333.01 on Monday')",
+      "note": "mock fill \u2014 no real money moved"
+    },
+    {
+      "timestamp": "2026-10-12T06:30:00-07:00",
+      "ticker": "LLY",
+      "action": "buy (mock fill at market open)",
+      "shares": 4.2328,
+      "fill_price": 1181.24,
+      "cost_basis": 4999.95,
+      "price_source": "finnhub.io live quote (Open Price 1181.24, Prev Close 1179.27)",
+      "note": "mock fill \u2014 no real money moved"
+    },
+    {
+      "timestamp": "2026-10-12T06:30:00-07:00",
+      "ticker": "XOM",
+      "action": "buy (mock fill at market open)",
+      "shares": 29.2381,
+      "fill_price": 171.01,
+      "cost_basis": 5000.01,
+      "price_source": "finnhub.io live quote (Open Price 171.01, Prev Close 168.94)",
+      "note": "mock fill \u2014 no real money moved"
+    },
+    {
+      "timestamp": "2026-10-12T06:30:00-07:00",
+      "ticker": "GE",
+      "action": "buy (mock fill at market open)",
+      "shares": 16.2454,
+      "fill_price": 307.78,
+      "cost_basis": 5000.01,
+      "price_source": "finnhub.io live quote (Open Price 307.78, Prev Close 308.20)",
+      "note": "mock fill \u2014 no real money moved"
+    },
+    {
+      "timestamp": "2026-10-19T06:30:00-07:00",
+      "ticker": "XOM",
+      "action": "sell (mock fill at market open)",
+      "shares": 14.619,
+      "fill_price": 178.45,
+      "proceeds": 2608.76,
+      "price_source": "finnhub.io live quote dated 2026-10-19 (Open Price 178.45, Prev Close 178.98)",
+      "note": "mock fill \u2014 no real money moved; user approved sun oct 18 2026"
+    },
+    {
+      "timestamp": "2026-10-19T06:30:00-07:00",
+      "ticker": "NVDA",
+      "action": "buy (mock fill at market open)",
+      "shares": 11.9616,
+      "fill_price": 218.095,
+      "cost": 2608.76,
+      "price_source": "finnhub.io live quote dated 2026-10-19 (Open Price 218.095, Prev Close 214.13)",
+      "note": "mock fill \u2014 no real money moved; user approved sun oct 18 2026"
+    }
+  ],
+  "final_valuation": {
+    "date": "2026-11-20",
+    "value": 42457.13,
+    "roi_pct": -15.09,
+    "spx_since_start_pct": -11.54,
+    "note": "only LLY and GE finished green vs fill"
+  }
+}

@@ -1,0 +1,10 @@
+2026-10-12T06:30:00-07:00 | BUY NVDA | shares 43.6148 | fill $229.28 | cost $10000.0 | source: marketbeat.com instant alerts dated 2026-10-12 ('opened at $229.28 on Monday') | mock fill, no real money moved
+2026-10-12T06:30:00-07:00 | BUY MSFT | shares 14.0169 | fill $535.07 | cost $7500.02 | source: marketbeat.com instant alerts dated 2026-10-12 ('opened at $535.07 on Monday') | mock fill, no real money moved
+2026-10-12T06:30:00-07:00 | BUY AMZN | shares 28.579 | fill $262.43 | cost $7499.99 | source: americanbankingnews.com dated 2026-10-12 ('opened at $262.43 on Monday') | mock fill, no real money moved
+2026-10-12T06:30:00-07:00 | BUY META | shares 6.9573 | fill $718.67 | cost $5000.0 | source: americanbankingnews.com dated 2026-10-12 ('opened at $718.67 on Monday') | mock fill, no real money moved
+2026-10-12T06:30:00-07:00 | BUY JPM | shares 15.0146 | fill $333.01 | cost $5000.01 | source: zolmax.com dated 2026-10-12 ('opened at $333.01 on Monday') | mock fill, no real money moved
+2026-10-12T06:30:00-07:00 | BUY LLY | shares 4.2328 | fill $1181.24 | cost $4999.95 | source: finnhub.io live quote (Open Price 1181.24, Prev Close 1179.27) | mock fill, no real money moved
+2026-10-12T06:30:00-07:00 | BUY XOM | shares 29.2381 | fill $171.01 | cost $5000.01 | source: finnhub.io live quote (Open Price 171.01, Prev Close 168.94) | mock fill, no real money moved
+2026-10-12T06:30:00-07:00 | BUY GE | shares 16.2454 | fill $307.78 | cost $5000.01 | source: finnhub.io live quote (Open Price 307.78, Prev Close 308.20) | mock fill, no real money moved
+2026-10-19T06:30:00-07:00 | SELL XOM | shares 14.6190 | fill $178.45 | proceeds $2608.76 | source: finnhub.io live quote dated 2026-10-19 (Open Price 178.45, Prev Close 178.98) | mock fill — no real money moved; user approved sun oct 18 2026
+2026-10-19T06:30:00-07:00 | BUY NVDA | shares 11.9616 | fill $218.095 | cost $2608.76 | source: finnhub.io live quote dated 2026-10-19 (Open Price 218.095, Prev Close 214.13) | mock fill — no real money moved; user approved sun oct 18 2026
